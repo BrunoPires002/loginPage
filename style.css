@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+body {
+    background-image: url('./img/back.jpg');
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+/*TIRAR O CONTORNO DAS CAIXAS*/
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a, label {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: #08558B;
+}
+
+
+/*CONTEINER LOGINB*/
+div.container-login {
+    
+    background-color: aliceblue;
+
+    /*TAMANHO LATERAL DO CONTAINER*/
+    width: 400px;
+
+    /*ALINHANDO NO CENTRO OS O CONTAINER*/
+    margin-left: auto;
+    margin-right: auto;
+    
+    /*ESPAÇAMENTO DOS ITENS DO CANTO DO CONTAINER*/
+    padding: 20px;
+    
+    /*DA UMA MARGEM EM CIMA DEPENDENDO DE QUAL DISPOSITIVO ESTIVER COM O VH*/
+    margin-top: 10vh;
+
+    /*DEIXA A BORDA ARREDONDADA*/
+    border-radius: 10px;
+
+    /*ALINHANDO OS TEXTOS NO CENTRO*/
+    text-align: center;
+}
+
+
+/*FORMULARIO*/
+form {
+    /*ESPAÇAMENTO ENTRE AS DIVS CONTIDAS NO INDEX*/
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    /*CADA UM VAI OCUPAR 100% DO TAMANHO DO CONTAINER ASSIM QUEBRANDO LINHA*/
+    display: block;
+
+    /*LARGURA 100% PREENCHENDO A LINHA TODA*/
+    width: 100%;
+
+    /*ALINHANDO A ESQUERDA*/
+    text-align: left;
+}
+
+label {
+    /*A LABEL FICA EM NEGRITO*/
+    font-weight: bold;
+}
+
+input {
+    /*ADICIONA O CONTORNO*/
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+
+    /*AUMENTANDO A FONTE DO INPUT*/
+    font-size: 1rem;
+
+    /*ADICIONANDO UMA DISTANCIA ENTRE ELES*/
+    margin-bottom: 20px;
+}
+
+input:hover {
+    border-bottom: 2px solid #08558B;
+}
+
+input:focus {
+    border-bottom: 2px solid #08558B;
+}
+
+#forgot-pass {
+    padding-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+
+    cursor: pointer;
+
+    color: white;
+    background-color: #232ce4;
+}
+
+input[type="submit"]:hover{
+    background-color: #1b22bc;
+    transition: .10s;
+}
+
+/*REDES SOCIAIS*/
+
+.social-container {
+    margin-bottom: 20px;
+}
+.social-container p {
+    margin-bottom: 20px;
+}
+
+.social-container i {
+    
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #FFF;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.fa-linkedin-in {
+    background-color: #0077B5;
+}
